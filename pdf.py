@@ -4,9 +4,9 @@ from telegraph import Telegraph, TelegraphException
 import tempfile
 import asyncio
 import os
-from config import ACCESS_TOKEN
+from config import TELEGRAPH_TOKEN
 
-telegraph = Telegraph(access_token=ACCESS_TOKEN)
+telegraph = Telegraph(access_token=TELEGRAPH_TOKEN)
 
 
 # Convertir el nombre a camel case
@@ -28,7 +28,7 @@ def pdf_to_images(pdf_path):
     for page_num in range(pdf_document.page_count):
         page = pdf_document[page_num]
         
-                # Use a matrix to increase the resolution
+        # Use a matrix to increase the resolution
         matrix = fitz.Matrix(5.0, 5.0)
         image_list = page.get_pixmap(matrix=matrix)
         

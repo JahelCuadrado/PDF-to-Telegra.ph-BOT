@@ -1,0 +1,16 @@
+.dockerignore
+
+.gitignore
+
+config.py
+
+__pychache__/
+
+propietarios.json
+
+pdf_to_telegraph_bot_env/
+
+.vscode/
+
+.git
+
